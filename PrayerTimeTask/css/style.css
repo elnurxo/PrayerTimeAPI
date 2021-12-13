@@ -1,0 +1,133 @@
+#mySection {
+  background-image: url("https://images.pexels.com/photos/5385913/pexels-photo-5385913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#mySection .loading {
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+#mySection .loading .container .row .loader {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+#mySection .loading .container .row .loader div {
+  height: 100px;
+  width: 100px;
+  border: 15px solid #45474b;
+  border-top-color: #e6372a;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  -webkit-animation: spin 1.5s infinite linear;
+          animation: spin 1.5s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#mySection .wrapper .container .myRow {
+  margin-top: 6%;
+  background-color: rgba(255, 255, 255, 0.199);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 7px;
+}
+
+#mySection .wrapper .container .myRow .inputField h3 {
+  font-family: 'Roboto Slab';
+  font-weight: 600;
+  color: #e2e2e2;
+  font-size: 2.5rem;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+#mySection .wrapper .container .myRow .inputField h3:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  color: white;
+}
+
+#mySection .wrapper .container .myRow .inputField form {
+  border-bottom: black;
+}
+
+#mySection .wrapper .container .myRow .inputField form label {
+  color: white;
+  font-weight: bolder;
+}
+
+#mySection .wrapper .container .cardRow .cardCol {
+  display: none;
+  margin-top: 2%;
+  background-color: rgba(255, 255, 255, 0.199);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 7px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#mySection .wrapper .container .cardRow .cardCol:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#mySection .wrapper .container .cardRow .cardCol:hover > h3 {
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+#mySection .wrapper .container .cardRow .cardCol h3 {
+  margin-top: 1%;
+  color: #d6d6d6;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#mySection .wrapper .container .cardRow .cardCol p {
+  color: whitesmoke;
+  padding: 0;
+  margin: 0;
+}
+
+#mySection .wrapper .container .cardRow .cardCol p:last-child {
+  margin-bottom: 4%;
+}
+
+#mySection .wrapper .container .cardRow .cardCol p span {
+  color: black;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */

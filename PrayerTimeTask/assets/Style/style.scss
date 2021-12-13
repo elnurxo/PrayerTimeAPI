@@ -1,0 +1,111 @@
+#mySection{
+    background-image: url('https://images.pexels.com/photos/5385913/pexels-photo-5385913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    filter: brightness(90%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .loading{
+        background-color: rgba(0, 0, 0, 0.514);
+        .container{
+            .row{
+                .loader{
+                    height: 100vh;
+                    width: 100vw;
+                    display: none;
+                    div{
+                        height: 100px;
+                        width: 100px;
+                        border: 15px solid #45474b;
+                        border-top-color: #e6372a;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        border-radius: 50%;
+                        animation: spin 1.5s infinite linear;
+                    }
+                    @keyframes spin{
+                        100%{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapper{
+        .container{
+            .myRow{  
+                margin-top: 6%;
+                background-color: rgba(255, 255, 255, 0.199);
+                backdrop-filter: blur(7px);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                border-radius: 7px;
+                .inputField
+                {
+                   
+                    h3{
+                       font-family: 'Roboto Slab';
+                       font-weight: 600;
+                       color: rgb(226, 226, 226); 
+                       font-size: 2.5rem;
+                       transition: .3s ease-in-out;
+                       cursor: pointer;
+                       &:hover{
+                           transform: scale(0.9);
+                           color: white;
+                       }
+                    }
+                    form{
+                        border-bottom: black;
+                        label{
+                            color: white;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+            .cardRow{
+                // margin-bottom: 27.5rem;
+                .cardCol{
+                display: none;
+                margin-top: 2%;
+                background-color: rgba(255, 255, 255, 0.199);
+                backdrop-filter: blur(7px);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                border-radius: 7px;
+                transition: .3s ease-in-out;
+                &:hover{
+                    transform: scale(0.9);
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+                &:hover > h3{
+                    color: whitesmoke;
+                    letter-spacing: 1px;
+                }
+                h3{
+                    margin-top: 1%;
+                    color: rgb(214, 214, 214);
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+                }
+                p{
+                    color: whitesmoke;
+                    padding: 0;
+                    margin: 0;
+                    &:last-child{
+                        margin-bottom: 4%;
+                    }
+                    span{
+                        color: black;
+                        font-weight: bolder;
+                    }
+                }
+                }
+            }
+        }    
+    }
+}
